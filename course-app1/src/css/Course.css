@@ -1,0 +1,72 @@
+.course-main {
+    display: flex;
+    flex-wrap: wrap; /* Kartlar sığmazsa alt satıra geçer */
+    justify-content: center;
+    gap: 20px; /* Kartlar arası boşluk */
+    margin-top: 30px;
+}
+
+.course {
+    width: 260px;
+    height: 400px; /* Sabit yükseklik çok önemli */
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    /* Kartın içindeki her şeyin birbirine girmemesi için */
+    justify-content: flex-start; 
+}
+.course-image {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.course-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.course-desc {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.4;
+    /* Metin çok uzunsa taşmaması için */
+    overflow: hidden;
+}
+
+.course-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* center yerine baseline denersen harf tabanları hizalanır */
+    align-items: baseline; 
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.course-price {
+    font-size: 18px;
+    color: #e44d26;
+    margin: 0 !important; /* Tüm dış boşlukları kesin olarak siler */
+    padding: 0;
+    line-height: 1.2; /* Yazının kendi yüksekliğini sabitler */
+    display: flex;
+    align-items: center;
+}
+
+.course-link {
+    font-size: 13px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1; /* Fiyatla aynı hizada durmasını sağlar */
+}
