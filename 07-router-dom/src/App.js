@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";  //herhangi bir eşleşme olmazsa
 import EmployeeAbout from "./pages/EmployeeAbout";
 import CompanyAbout from "./pages/CompanyAbout";
 import Header from "./components/Header";
+import ProductDetails from "./pages/ProductDetails";
 import "./App.css";
  
 function App() {
@@ -16,13 +17,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/about" element={<About />}>
-          <Route path="employee" element={<EmployeeAbout />}/>
+        <Route path="/about" element={<About />}> 
+          <Route path="employee" element={<EmployeeAbout />}/> 
           <Route path="company" element={<CompanyAbout />}/>
         </Route>
 
         <Route path="/contact" element={<Contact />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products" element={<Products />} />  
+        <Route path="/product-details/:id" element={<ProductDetails />}/> 
         <Route path="*" element={<NotFound />} />   
       </Routes> 
     </div>

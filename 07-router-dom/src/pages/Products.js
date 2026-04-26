@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Product from "../components/Product";
+import urunler from "../data/urunler";
 
-const Products  = () => {
+const Products = () => {
   return (
-    <div>Products page </div>
-  )
-}
+    <div>
+      {urunler?.map((urun) => (
+        <Product key={urun.id} product={urun} />
+      ))}
+    </div>
+  );
+};
 
-export default Products 
+export default Products;
