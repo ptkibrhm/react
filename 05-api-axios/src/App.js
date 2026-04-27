@@ -64,9 +64,10 @@ KULLANICI GÜNCELLEME
 
   },[])
 
-  */
-
-  const deleteUserById=async(userId)=>{
+  
+  KULLANICI SİLME 
+  
+const deleteUserById=async(userId)=>{
     const response= await axios.delete(BASE_URL+"/users/"+userId)
     console.log(response.data)
   }
@@ -75,6 +76,8 @@ KULLANICI GÜNCELLEME
     deleteUserById("2")
 
   },[])
+
+  */
 
   return (
     <div>

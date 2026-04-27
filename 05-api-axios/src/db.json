@@ -1,14 +1,16 @@
 {
   "users": [
     {
-      "username": "yakup",
-      "password": "9876",
-      "id": "1"
+      "id": "1",
+      "username": "ibrhmptk",
+      "password": "9876"
+      
     },
     {
+      "id": "2",
       "username": "Ali",
-      "password": "wwww",
-      "id": "NFwFh4IPF3k"
+      "password": "wwww"
+      
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
