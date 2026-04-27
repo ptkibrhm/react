@@ -1,7 +1,7 @@
-import {Routes ,Route} from "react-router-dom"
 import PageContainer from "./container/PageContainer";
 import Header from "./components/Header";
 import "./App.css"
+import ProductList from "./components/ProductList";
 
 
 
@@ -10,6 +10,7 @@ function App() {
     <div>
       <PageContainer>
         <Header />
+        <ProductList />
       </PageContainer>
     </div>
   );
