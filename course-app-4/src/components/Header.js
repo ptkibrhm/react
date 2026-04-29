@@ -4,12 +4,14 @@ import "../css/Header.css";
 import { SlBasketLoaded } from "react-icons/sl";
 import { CiLight } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
 
   const [theme,setTheme]=useState(false);
+  const navigate =useNavigate();
   const changeTheme=()=>{
-    const root=document.getElementById("root");
+  const root=document.getElementById("root");
    
     if(theme){
       root.style.backgroundColor="black"
@@ -31,7 +33,7 @@ const Header = () => {
         justifyContent: "space-between",
       }}
     >
-      <div className="flex-row">
+      <div className="flex-row" onClick={()=>navigate("/")}>
         <img className="logo" src={myLogo} alt="company Logo" />
         <p className="logo-text">PETEK A.Ş</p>
       </div>
