@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  //PROJEYİ AYAĞA KALDIRAN ROOT COMPONENT
   <Provider store={store}>
     <BrowserRouter>
       <App />

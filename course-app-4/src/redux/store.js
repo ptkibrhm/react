@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import appSlice from "./slices/appSlice";
-import productSlice from "./slices/productSlice";
+import appReducer from "../redux/slices/appSlice";
+import productReducer from "../redux/slices/productSlice";
+import basketReducer from "../redux/slices/basketSlice";
 
 const store = configureStore({
   reducer: {
-    app: appSlice,
-    product: productSlice,
+    app: appReducer,
+    product: productReducer,
+    basket: basketReducer,
   },
 });
 

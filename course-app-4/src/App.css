@@ -21,3 +21,8 @@ body{
 #root{
     height: 100vh ;
 }
+
+.drawer{
+    height: 500px !important;
+
+}

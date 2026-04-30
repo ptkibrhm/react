@@ -3,6 +3,7 @@ import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useSelector } from "react-redux";
 
+//İNTERNET YAVAŞLADIĞINDA SAYFADA LOODİNG MATERİAL İ
 const Loading = () => {
   const {loading} =useSelector((store)=>store.product);
  
