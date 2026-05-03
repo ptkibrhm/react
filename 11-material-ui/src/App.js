@@ -18,6 +18,7 @@ import MUIAlert from "./components/MUIAlert";
 import MUIDialog from "./components/MUIDialog";
 import MUISnackBar from "./components/MUISnackBar";
 import MUIProgress from "./components/MUIProgress";
+import MUISkeleton from "./components/MUISkeleton";
 
 function App() {
   return (
@@ -42,9 +43,11 @@ function App() {
       <MUIAlert />
       <MUIDialog />
       <MUISnackBar />
-        */}
-
       <MUIProgress />
+
+        */}
+      <MUISkeleton />
+      
     </div>
   );
 }
