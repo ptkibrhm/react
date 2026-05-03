@@ -26,7 +26,7 @@ const MUITable = () => {
 
         <TableBody>
             {rows.map((row,index)=>(
-                <TableRow>
+                <TableRow key={Math.random()*99}>
                     <TableCell>{row.id}</TableCell>
                     <TableCell>{row.firstName}</TableCell>
                     <TableCell>{row.lastName}</TableCell>

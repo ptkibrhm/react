@@ -20,6 +20,7 @@ import MUISnackBar from "./components/MUISnackBar";
 import MUIProgress from "./components/MUIProgress";
 import MUISkeleton from "./components/MUISkeleton";
 import MUITable from "./components/MUITable";
+import MUITabs from "./components/MUITabs";
 
 function App() {
   return (
@@ -46,9 +47,10 @@ function App() {
       <MUISnackBar />
       <MUIProgress />
       <MUISkeleton />
+      <MUITable /> 
 
         */}
-      <MUITable />  
+      <MUITabs /> 
       
       
     </div>
